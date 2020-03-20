@@ -199,6 +199,7 @@ class MainActivity : AppCompatActivity() {
         imageButton.setOnLongClickListener{
             screen = ""
             textView.text = screen
+            textView2.text = screen
             true
 
         }
