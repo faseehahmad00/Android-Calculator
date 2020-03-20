@@ -1,9 +1,11 @@
 package com.example.mycalculator
 
 import android.os.Bundle
+import android.view.View.OnLongClickListener
 import androidx.appcompat.app.AppCompatActivity
 import expression
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     @ExperimentalStdlibApi
@@ -236,6 +238,7 @@ class MainActivity : AppCompatActivity() {
             if (screen.length < 60) {
                 screen = (screen + button24.text)
                 textView.text = screen
+
             }
         }
     }
