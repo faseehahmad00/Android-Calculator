@@ -196,6 +196,12 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        imageButton.setOnLongClickListener{
+            screen = ""
+            textView.text = screen
+            true
+
+        }
         button15.setOnClickListener {
             try {
                 val result = expression.eval(screen)
