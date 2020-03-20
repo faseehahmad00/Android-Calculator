@@ -1,11 +1,12 @@
 package com.example.mycalculator
-
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import expression
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     @ExperimentalStdlibApi
+    val simplify  = expression()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -117,7 +118,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             button15.setOnClickListener {
-                textView.text = screen.toInt().toString()
+                val result  = expression.eval(screen)
+                textView.text = result.toString()
+                screen  = ""
+
             }
 
 
