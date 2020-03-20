@@ -24,7 +24,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="C"
-            android:textColor="#E10B0B"
+            android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
         <Button
@@ -318,30 +318,31 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="140dp"
+        android:gravity="bottom|right|end"
+        android:textAlignment="textStart"
         android:textColor="#E10B0B"
-        android:textSize="35sp"
-        android:gravity="left"
-        android:textAlignment="textEnd"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.609"
         tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:gravity="start"
+        android:layout_height="50dp"
+        android:gravity="right"
         android:textAlignment="textStart"
         android:textColor="#E10B0B"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/linearupper"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlCompat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
