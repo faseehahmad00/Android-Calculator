@@ -1,7 +1,6 @@
 package com.example.mycalculator
 
 import android.os.Bundle
-import android.view.View.OnLongClickListener
 import androidx.appcompat.app.AppCompatActivity
 import expression
 import kotlinx.android.synthetic.main.activity_main.*
@@ -9,12 +8,10 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     @ExperimentalStdlibApi
-    val simplify = expression()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var screen: String = " "
+        var screen = " "
 
         button.setOnClickListener {
             if (screen.length < 60) {
