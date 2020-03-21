@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/linearupper"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +20,10 @@
         <Button
             android:id="@+id/button17"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="72dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
             android:text="C"
             android:textColor="#FF0303"
             android:textSize="30sp" />
@@ -33,6 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
             android:text="(  "
             android:textColor="#80C008"
             android:textSize="30sp" />
@@ -40,9 +42,10 @@
         <Button
             android:id="@+id/button19"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="49dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
             android:text=")"
             android:textColor="#80C008"
             android:textSize="30sp" />
@@ -53,17 +56,18 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
             android:text="^"
             android:textColor="#80C008"
-            android:textSize="36sp"
-            tools:text="^" />
+            android:textSize="36sp" />
 
         <ImageButton
             android:id="@+id/imageButton"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
+            android:layout_width="113dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/ripple_effect"
             app:srcCompat="@android:drawable/ic_input_delete" />
 
     </LinearLayout>
@@ -71,7 +75,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +92,8 @@
             android:text="."
             android:textAllCaps="false"
             android:textColor="#80C008"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button14"
@@ -98,7 +103,8 @@
             android:layout_weight="1"
             android:text="0"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button24"
@@ -108,7 +114,8 @@
             android:layout_weight="1"
             android:text="sqrt("
             android:textColor="#80C008"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button11"
@@ -118,7 +125,8 @@
             android:layout_weight="1"
             android:text="/"
             android:textColor="#80C008"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button15"
@@ -128,14 +136,15 @@
             android:layout_weight="1"
             android:text="="
             android:textColor="#FF0303"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -150,7 +159,8 @@
             android:layout_weight="1"
             android:text="1"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button8"
@@ -160,7 +170,8 @@
             android:layout_weight="1"
             android:text="2"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button9"
@@ -170,7 +181,8 @@
             android:layout_weight="1"
             android:text="3"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button10"
@@ -180,7 +192,8 @@
             android:layout_weight="1"
             android:text="-"
             android:textColor="#80C008"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button22"
@@ -189,14 +202,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="tan("
-            android:textColor="#80C008" />
+            android:textColor="#80C008"
+            android:background="@drawable/ripple_effect"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -210,7 +224,8 @@
             android:layout_weight="1"
             android:text="@string/_4"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
 
         <Button
@@ -221,7 +236,8 @@
             android:layout_weight="1"
             android:text="@string/_5"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button3"
@@ -231,7 +247,8 @@
             android:layout_weight="1"
             android:text="@string/_6"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button12"
@@ -241,7 +258,8 @@
             android:layout_weight="1"
             android:text="x"
             android:textColor="#80C008"
-            android:textSize="22sp" />
+            android:textSize="22sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button21"
@@ -250,14 +268,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="cos("
-            android:textColor="#80C008" />
+            android:textColor="#80C008"
+            android:background="@drawable/ripple_effect"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -271,7 +290,8 @@
             android:layout_weight="1"
             android:text="7"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button6"
@@ -281,7 +301,8 @@
             android:layout_weight="1"
             android:text="8"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button5"
@@ -291,7 +312,8 @@
             android:layout_weight="1"
             android:text="9"
             android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button16"
@@ -301,7 +323,8 @@
             android:layout_weight="1"
             android:text="+"
             android:textColor="#80C008"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:background="@drawable/ripple_effect"/>
 
         <Button
             android:id="@+id/button23"
@@ -310,7 +333,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="sin("
-            android:textColor="#80C008" />
+            android:textColor="#80C008"
+            android:background="@drawable/ripple_effect"/>
 
     </LinearLayout>
 
@@ -318,25 +342,26 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="wrap_content"
         android:gravity="bottom|right|end"
         android:textAlignment="textStart"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_bias="0.701"
         tools:ignore="RtlCompat" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="right"
-        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:gravity="left"
+        android:textAlignment="textEnd"
         android:textColor="#80C008"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/linearupper"
@@ -353,9 +378,10 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearupper"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
