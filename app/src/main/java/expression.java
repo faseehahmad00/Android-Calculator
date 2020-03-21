@@ -20,7 +20,7 @@ public class expression {
             double parse() {
                 nextChar();
                 double x = parseExpression();
-                if (pos < str.length()) throw new RuntimeException("Unexpected: " + (char)ch);
+                if (pos < str.length()) throw new RuntimeException("Unexpected: " + (char) ch);
                 return x;
             }
 
@@ -32,8 +32,8 @@ public class expression {
 
             double parseExpression() {
                 double x = parseTerm();
-                for (;;) {
-                    if      (eat('+')) x += parseTerm(); // addition
+                for (; ; ) {
+                    if (eat('+')) x += parseTerm(); // addition
                     else if (eat('-')) x -= parseTerm(); // subtraction
                     else return x;
                 }
@@ -41,8 +41,8 @@ public class expression {
 
             double parseTerm() {
                 double x = parseFactor();
-                for (;;) {
-                    if      (eat('*')) x *= parseFactor(); // multiplication
+                for (; ; ) {
+                    if (eat('*')) x *= parseFactor(); // multiplication
                     else if (eat('/')) x /= parseFactor(); // division
                     else return x;
                 }
@@ -70,7 +70,7 @@ public class expression {
                     else if (func.equals("tan")) x = Math.tan(Math.toRadians(x));
                     else throw new RuntimeException("Unknown function: " + func);
                 } else {
-                    throw new RuntimeException("Unexpected: " + (char)ch);
+                    throw new RuntimeException("Unexpected: " + (char) ch);
                 }
 
                 if (eat('^')) x = Math.pow(x, parseFactor()); // exponentiation
@@ -78,5 +78,23 @@ public class expression {
                 return x;
             }
         }.parse();
+    }
+
+    public static CharSequence backspace(CharSequence str) {
+        if (str.length() >= 1) {
+            if (str.charAt(str.length()-1) == '(' && str.charAt(str.length()-2) == 'n') {
+                str = str.subSequence(0,str.length()-3);
+            }
+            else if (str.charAt(str.length()-1) == '(' && str.charAt(str.length()-2) == 's') {
+                str = str.subSequence(0,str.length()-3);
+            }
+            else if (str.charAt(str.length()-1) == '(' && str.charAt(str.length()-2) == 't') {
+                str = str.subSequence(0,str.length()-4);
+            }
+            else
+                str = str.toString();
+                str = str.subSequence(0,(str.length()-1));
+        }
+        return str;
     }
 }

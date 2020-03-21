@@ -169,7 +169,7 @@ class MainActivity : AppCompatActivity() {
         }
         button18.setOnClickListener {
             if (screen.length < 60) {
-                screen = (screen + button18.text)
+                screen = (screen + "(")
                 textView.text = screen
             }
         }
@@ -185,16 +185,16 @@ class MainActivity : AppCompatActivity() {
             textView2.text = screen
         }
         imageButton.setOnClickListener {
-            if (screen.length >= 1) {
-                screen = screen.substring(0, (screen.length - 1))
-                textView.text = screen
+
+                textView.text = expression.backspace(textView.text)
+                screen = textView.text.toString()
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = result.toString()
+                    textView2.text ="=" + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
-            }
+
         }
         imageButton.setOnLongClickListener{
             screen = ""
@@ -206,7 +206,7 @@ class MainActivity : AppCompatActivity() {
         button15.setOnClickListener {
             try {
                 val result = expression.eval(screen)
-                screen = result.toString()
+                screen =result.toString()
                 textView.text = screen
                 textView2.text = ""
 
