@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = (screen)
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -155,7 +155,7 @@ class MainActivity : AppCompatActivity() {
                 textView.text = screen
                 try {
                     val result = expression.eval(screen)
-                    textView2.text = "=" + result.toString()
+                    textView2.text = "= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
@@ -190,7 +190,7 @@ class MainActivity : AppCompatActivity() {
                 screen = textView.text.toString()
                 try {
                     val result = expression.eval(screen)
-                    textView2.text ="=" + result.toString()
+                    textView2.text ="= " + result.toString()
                 } catch (e: Exception) {
                     textView2.text = ""
                 }
